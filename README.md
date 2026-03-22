@@ -9,7 +9,7 @@ Birthday-Pi is a static web app that finds where your birthday appears inside th
 - Month + day dropdown birthday input (converted internally to `MMDD`)
 - Finds first occurrence index of your birthday key in pi digits
 - Counts total non-overlapping occurrences in the first 100,000 digits
-- Shows both 0-based and 1-based first-match position
+- Shows the first-match position in pi digits
 - Generates a Pi Sign based on the anchor digit at first match
 - Includes 10 custom signs with distinct oracle readings
 - Handles no-match edge cases gracefully with deterministic fallback sign

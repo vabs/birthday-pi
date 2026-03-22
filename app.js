@@ -89,22 +89,22 @@ function onSubmit(event) {
   }
 
   const key = `${month}${day}`;
-  const firstIndex = piDigits.indexOf(key);
+  const firstPositionIndex = piDigits.indexOf(key);
   const totalMatches = countOccurrences(piDigits, key);
 
-  if (firstIndex === -1) {
+  if (firstPositionIndex === -1) {
     const fallbackDigit = deterministicDigit(key);
     const fallbackSign = signs[String(fallbackDigit)];
     resultsNode.innerHTML = renderNotFound(key, fallbackSign, fallbackDigit);
     return;
   }
 
-  const anchorDigit = Number(piDigits[firstIndex]);
+  const anchorDigit = Number(piDigits[firstPositionIndex]);
   const sign = signs[String(anchorDigit)];
 
   resultsNode.innerHTML = renderFound({
     key,
-    firstIndex,
+    firstPositionIndex,
     totalMatches,
     anchorDigit,
     sign,
@@ -135,19 +135,17 @@ function deterministicDigit(key) {
   return hash;
 }
 
-function renderFound({ key, firstIndex, totalMatches, anchorDigit, sign }) {
+function renderFound({ key, firstPositionIndex, totalMatches, anchorDigit, sign }) {
+  const firstPosition = firstPositionIndex + 1;
+
   return `
     <div class="result-shell">
       <span class="pill">Birthday Key: ${key}</span>
       <h2>Your Birthday in Pi</h2>
       <div class="metrics">
         <div class="metric">
-          <p>First appears at (0-based)</p>
-          <b>${firstIndex.toLocaleString()}</b>
-        </div>
-        <div class="metric">
-          <p>First appears at (1-based)</p>
-          <b>${(firstIndex + 1).toLocaleString()}</b>
+          <p>First appears at position</p>
+          <b>${firstPosition.toLocaleString()}</b>
         </div>
         <div class="metric">
           <p>Total echoes in first 100,000 digits</p>
