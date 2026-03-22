@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday-Pi</title>
+    <meta
+      name="description"
+      content="Find where your birthday appears in the first 100,000 digits of pi and discover your Pi Sign."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="layout">
+      <header class="page-header reveal">
+        <p class="brand">Birthday-Pi</p>
+      </header>
+
+      <div class="content-grid">
+        <div class="left-column panel reveal">
+          <section class="hero">
+            <p class="kicker">Pi Destiny Finder</p>
+            <h1>Somewhere inside π, your birthday is waiting.</h1>
+            <p>
+              Choose your month and date. We'll reveal where your birthday first appears in the first
+              100,000 digits of pi, how often it echoes, and your Pi Sign's oracle reading.
+            </p>
+          </section>
+
+          <section class="finder" aria-labelledby="finder-title">
+            <h2 id="finder-title">Find my birthday in Pi</h2>
+            <form id="birthday-form" class="form" novalidate>
+              <div class="form-field">
+                <label for="month">Month</label>
+                <select id="month" name="month" required></select>
+              </div>
+
+              <div class="form-field">
+                <label for="day">Day</label>
+                <select id="day" name="day" required></select>
+              </div>
+
+              <button type="submit">Reveal my Pi Sign</button>
+              <p id="form-error" class="error" role="alert" aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="compact-notes">
+            <p>Your birthday is converted to <code>MMDD</code>, then searched across the first 100,000 digits of π.</p>
+          </section>
+        </div>
+
+        <section id="results" class="results panel reveal initial" aria-live="polite">
+          <div class="default-sign-wrap">
+            <div class="default-sign">π Sign</div>
+            <p>Choose your birthday on the left to reveal your Pi destiny.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

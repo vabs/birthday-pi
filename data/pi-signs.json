@@ -1,0 +1,72 @@
+{
+  "0": {
+    "name": "Nullfire",
+    "traits": ["grounded", "patient", "quietly magnetic", "resilient"],
+    "compatible": ["7 - Halflight", "2 - Tidekeeper"],
+    "sacredNumber": 18,
+    "oracle": "Your power is subtle but absolute. You are the one who stays when everyone else scatters, and your steadiness turns chaos into shelter."
+  },
+  "1": {
+    "name": "First Spark",
+    "traits": ["bold", "instinctive", "self-starting", "fierce-hearted"],
+    "compatible": ["8 - Emberline", "3 - Lantern"],
+    "sacredNumber": 11,
+    "oracle": "You were not built for waiting rooms. When your heart says now, life bends open. The right doors answer your knock with thunder."
+  },
+  "2": {
+    "name": "Tidekeeper",
+    "traits": ["empathetic", "diplomatic", "romantic", "intuitive"],
+    "compatible": ["0 - Nullfire", "6 - Silk Orbit"],
+    "sacredNumber": 24,
+    "oracle": "You hear what others hide between their words. Your gift is gentle influence: soft enough not to bruise, strong enough to change destinies."
+  },
+  "3": {
+    "name": "Lantern",
+    "traits": ["expressive", "playful", "hopeful", "imaginative"],
+    "compatible": ["1 - First Spark", "9 - Crownwind"],
+    "sacredNumber": 30,
+    "oracle": "You carry light like a craft. Even your laughter repairs what grief has cracked, and your joy gives others permission to begin again."
+  },
+  "4": {
+    "name": "Iron Bloom",
+    "traits": ["disciplined", "loyal", "methodical", "dependable"],
+    "compatible": ["5 - Meridian", "8 - Emberline"],
+    "sacredNumber": 44,
+    "oracle": "You build futures brick by brick. Nothing flashy, nothing fake. What you touch becomes reliable, and reliability is a form of love."
+  },
+  "5": {
+    "name": "Meridian",
+    "traits": ["curious", "restless", "adventurous", "adaptable"],
+    "compatible": ["4 - Iron Bloom", "7 - Halflight"],
+    "sacredNumber": 5,
+    "oracle": "Your path is a moving horizon. You are meant to travel through versions of yourself, not stay trapped in a room that no longer fits."
+  },
+  "6": {
+    "name": "Silk Orbit",
+    "traits": ["protective", "devoted", "nurturing", "harmonizing"],
+    "compatible": ["2 - Tidekeeper", "9 - Crownwind"],
+    "sacredNumber": 36,
+    "oracle": "People breathe easier around you. You make homes out of hard seasons, and your tenderness proves that strength can be graceful."
+  },
+  "7": {
+    "name": "Halflight",
+    "traits": ["analytical", "mystic", "observant", "truth-seeking"],
+    "compatible": ["0 - Nullfire", "5 - Meridian"],
+    "sacredNumber": 27,
+    "oracle": "You are fluent in hidden patterns. What others call coincidence, you read as map and message. Trust your inner mathematics."
+  },
+  "8": {
+    "name": "Emberline",
+    "traits": ["ambitious", "strategic", "commanding", "resourceful"],
+    "compatible": ["1 - First Spark", "4 - Iron Bloom"],
+    "sacredNumber": 64,
+    "oracle": "You carry the frequency of achievement. Not for applause, but for impact. Your hunger is holy when tied to purpose."
+  },
+  "9": {
+    "name": "Crownwind",
+    "traits": ["visionary", "compassionate", "wise", "transformative"],
+    "compatible": ["3 - Lantern", "6 - Silk Orbit"],
+    "sacredNumber": 9,
+    "oracle": "Your endings are never endings. You are the bridge-maker, the cycle-closer, the one who turns pain into legacy and legacy into healing."
+  }
+}
